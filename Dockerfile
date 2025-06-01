@@ -16,8 +16,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копируем весь код
 COPY . .
 
-# Открываем порт
-EXPOSE 5000
-
 # Команда запуска
 CMD ["python", "main.py"]

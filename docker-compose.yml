@@ -1,7 +1,7 @@
-version: '3.8'
 services:
-  web:
-    build: .               # Собирать образ из текущей директории
-    ports:
-      - "8080:5000"        # Проброс портов: хост:контейнер
-    restart: always        # Автоперезапуск при сбоях
+  telegram-bot:
+    build: .
+    # НЕТ секции ports!
+    restart: always
+    environment:
+      - BOT_TOKEN=7982308107:AAGZOCd_0rGToJWj4dhOLig01t-msfhLD4Y
