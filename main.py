@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler()
 async def echo(message):
     await message.answer(message.text)
-    logging.info(f"Пришло сообщение {message.textß}")
+    logging.info(f"Пришло сообщение {message.text}")
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
