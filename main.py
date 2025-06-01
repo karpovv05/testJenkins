@@ -7,7 +7,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler()
 async def echo(message):
-    await message.answer("Привет!")
+    await message.answer(message.text)
     logging.info(f"Пришло сообщение {message.textß}")
 
 if __name__ == "__main__":
